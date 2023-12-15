@@ -1,12 +1,13 @@
 'use client'
 
 import { ReceiptLists } from '@/components/ReceiptLists'
-import { Receipt } from '@/utils/receipt'
+import { Item, Receipt } from '@/utils/receipt'
 import { NextUIProvider, Card, CardBody } from '@nextui-org/react'
 import { TbAlertCircle } from 'react-icons/tb'
 
 export default function Home() {
-  const receipts = [1,2,3]
+  const re: Item[] = [{ name: 'cookies', price: 1000}]
+  const receipts:Receipt[] = [{place:'대동마트', sum:1000, items: re}]
   return (
     <>
       <div className="flex justify-end items-center">
