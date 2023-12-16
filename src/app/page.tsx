@@ -9,7 +9,14 @@ import { TbAlertCircle } from 'react-icons/tb'
 export default function Home() {
   return (
     <>
-      <WorkList works={works}/>  
+      <Card className='mt-4'>
+        <CardHeader className='text-2xl font-bold'>Works</CardHeader>
+          <CardBody>
+            <div>
+              <WorkList works={works}/>
+            </div>
+        </CardBody>
+      </Card>      
       {/* Who am I component*/}
       <Card className='mt-4'>
         <CardHeader className='text-2xl'>Who am I....</CardHeader>
@@ -26,20 +33,20 @@ export default function Home() {
 
 const favorites:Favorite[] = [
   {
-    title:"How years old?",
-    description: "14 (2009, 02, 28)"
+    title:"What your name?",
+    description: "WariHue!"
   },
   {
     title:"How years old?",
     description: "14 (2009, 02, 28)"
   },
   {
-    title:"How years old?",
-    description: "14 (2009, 02, 28)"
+    title:"Hello!",
+    description: "Hello!"
   },
   {
-    title:"How years old?",
-    description: "14 (2009, 02, 28)"
+    title:"Hmm...",
+    description: "할 말이 없네요"
   }
 ]
 
