@@ -4,6 +4,7 @@ import React from 'react'
 import { Button, Navbar, NavbarBrand, NavbarContent } from '@nextui-org/react'
 import { useTheme } from 'next-themes'
 import { TbBrightnessDown, TbMoon } from 'react-icons/tb'
+import { Logo } from './Logo'
 
 export const Nav: React.FC = () => {
 	const { theme, setTheme } = useTheme()
@@ -14,6 +15,7 @@ export const Nav: React.FC = () => {
     <>
       <Navbar shouldHideOnScroll> 
         <NavbarBrand>
+          <Logo/>
           <p className="font-bold text-inherit text-4xl ml-2">
             Portfolio
           </p>

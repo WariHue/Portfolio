@@ -8,9 +8,6 @@ module.exports = {
 	],
 	theme: {
 		extend: {},
-    minWidth: {
-      '1/3': '33%',
-    }
 	},
 	plugins: [nextui()],
 	darkMode: 'class',
