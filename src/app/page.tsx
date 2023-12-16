@@ -15,7 +15,7 @@ export default function Home() {
     <>      
       {/* Who am I component*/}
       <Card className='mt-4'>
-        <CardHeader className='text-2xl'>Who am I....</CardHeader>
+        <CardHeader className='text-2xl font-bold'>Who am I....</CardHeader>
           <CardBody>
             <div>
               <FavoriteList favorites={favorites}/>
