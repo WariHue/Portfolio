@@ -6,11 +6,13 @@ import { Nav } from '@/components/Nav'
 import { Link } from '@nextui-org/react'
 import packageJSON from '../../package.json'
 
+import 'react-toastify/dist/ReactToastify.css'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'My Receipts',
-  description: 'You can registry',
+  title: 'Portfolio',
+  description: 'WariHue',
 }
 
 export default function RootLayout({
@@ -25,13 +27,17 @@ export default function RootLayout({
 					<Nav />
 					<main className="mx-auto max-w-[1024px] px-6 mt-4">{children}</main>
 					<footer className="mx-auto max-w-[1024px] px-6 my-4 flex">
-          <div className="text-gray-500 font-light flex-grow w-0">
-          </div>
+            <div className="text-red-100 font-bold flex-grow w-0 text-left">
+              <Link
+                target='_blank'
+                rel='nonferrer'
+                href='https://undertale.com/'>Undertale</Link>
+            </div>
 						<div className="text-gray-500 font-light flex-grow w-0 text-center">
 							v{packageJSON.version}
 						</div>
 						<div className="text-gray-500 font-light flex-grow w-0 text-right">
-							Made by{' '}
+							Portfolio{' '}
 							<Link
 								target="_blank"
 								rel="noreferrer"
@@ -39,6 +45,7 @@ export default function RootLayout({
 							>
 								WariHue
 							</Link>
+              임
 						</div>
 					</footer>
 				</Providers>
