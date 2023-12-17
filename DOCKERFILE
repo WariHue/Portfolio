@@ -1,27 +1,13 @@
-FROM --platform=$BUILDPLATFORM node:20-alpine AS builder
+FROM node:20-alpine AS base
 
 WORKDIR /app
-COPY package.json pnpm-lock.json .npmrc ./
-
-RUN corepack enable && \
-    pnpm i
 
 COPY . .
 
-RUN pnpm pack && \
-    mv portfolio-*.tgz pack.tgz
+RUN npm install -g pnpm && pnpm install
 
-FROM node:20-alpine AS runner
-
-COPY --from=builder /app/pack.tgz .
-
-RUN corepack enable && \
-    tar xvf pack.tgz && \
-    rm pack.tgz && \
-    mv package app && \
-    cd app && \
-    pnpm i --production
-
-WORKDIR /app
+RUN pnpm build
 
 CMD ["pnpm", "start"]
+
+#docker build -t port-dev2 -f DOCKERFILE .

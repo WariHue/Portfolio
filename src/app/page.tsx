@@ -3,12 +3,14 @@
 import { FavoriteList } from '@/components/FavoriteList'
 import { WorkList } from '@/components/Works'
 import { handleCopyClipBoard } from '@/utils/functions'
-import { Favorite, Works } from '@/utils/types'
+import { Favorite, Skill, Works } from '@/utils/types'
 import { NextUIProvider, Card, CardBody, CardHeader, Snippet } from '@nextui-org/react'
 import Link from 'next/link'
 import { BsDiscord } from 'react-icons/bs'
 import { MdEmail, MdContentCopy } from 'react-icons/md'
 import { AiOutlineGithub } from 'react-icons/ai'
+import { BiLogoTypescript } from 'react-icons/bi'
+import { TbBrandNextjs } from 'react-icons/tb'
 
 export default function Home() {
   return (
@@ -37,6 +39,7 @@ export default function Home() {
       <Card className='mt-4'>
         <CardHeader className='text-2xl font-bold'>Skills</CardHeader>
           <CardBody>
+            할 줄 아는게 있긴한데 적기 귀찮아요
         </CardBody>
       </Card>
       {/**/}
