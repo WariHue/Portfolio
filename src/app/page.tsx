@@ -38,8 +38,8 @@ export default function Home() {
       {/* Skills component*/}
       <Card className='mt-4'>
         <CardHeader className='text-2xl font-bold'>Skills</CardHeader>
-          <CardBody>
-            할 줄 아는게 있긴한데 적기 귀찮아요
+        <CardBody>
+          시키면 배워올게요    
         </CardBody>
       </Card>
       {/**/}
