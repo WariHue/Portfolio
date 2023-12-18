@@ -39,7 +39,7 @@ export default function Home() {
       <Card className='mt-4'>
         <CardHeader className='text-2xl font-bold'>Skills</CardHeader>
         <CardBody>
-          시키면 배워올게요    
+          시키면 배워올게요!  
         </CardBody>
       </Card>
       {/**/}
