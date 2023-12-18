@@ -76,12 +76,12 @@ export default function Home() {
 
 const favorites:Favorite[] = [
   {
-    title:"What your name?",
+    title:"What's your name?",
     description: "WariHue!",
     color:'bg-blue-100 dark:bg-blue-900'
   },
   {
-    title:"How years old?",
+    title:"How old are you?",
     description: "14 (2009, 02, 28)",
     color:''
   },
