@@ -78,32 +78,38 @@ const favorites:Favorite[] = [
   {
     title:"What's your name?",
     description: "WariHue!",
-    color:'bg-blue-100 dark:bg-blue-900'
+    color:'bg-sky-100 dark:bg-sky-900',
+    url:""
   },
   {
     title:"How old are you?",
     description: "14 (2009, 02, 28)",
-    color:''
+    color:'bg-green-100 dark:bg-green-900',
+    url:""
   },
   {
-    title:"Hello!",
-    description: "Hello!",
-    color:''
+    title:"What's your gender?",
+    description: "MALE!",
+    color:'bg-pink-100 dark:bg-pink-900',
+    url:""
   },
   {
-    title:"Hmm...",
-    description: "할 말이 없네요",
-    color:''
+    title:"Are you healty?",
+    description: "No! I'm not healty🥲",
+    color:'bg-blue-100 dark:bg-blue-900',
+    url:""
   },
   {
-    title:"여섯 칸 채우고 싶은데..",
-    description: "Contact의 아이콘 누르면 뭔가 일어나요",
-    color:''
+    title:"GIVE ME MONEY!",
+    description: "돈 주세요",
+    color:"bg-emerald-100 dark:bg-emerald-900",
+    url:"https://toss.me/warihue"
   },
   {
     title:"안녕히 계세요!",
     description: "할 말이 없네요",
-    color:''
+    color:'bg-rose-100 dark:bg-rose-900',
+    url:""
   }
 ]
 

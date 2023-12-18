@@ -11,6 +11,7 @@ export interface Favorite {
   title: string
   description:string
   color:string
+  url:string
 }
 
 export interface Skill {
